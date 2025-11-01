@@ -2,14 +2,15 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCnSm1JQpUNjp2U4_wEe0U8A5sZHthtqOs",
-  authDomain: "lifelink-ai-6d54a.firebaseapp.com",
-  projectId: "lifelink-ai-6d54a",
-  storageBucket: "lifelink-ai-6d54a.firebasestorage.app",
-  messagingSenderId: "337672782591",
-  appId: "1:337672782591:web:e14b9f37d18ebf495f42ca",
-  measurementId: "G-7ZSHLX3WCE"
+  apiKey: "Replace with your firebase credentials ",
+  authDomain: "Replace with your firebase credentials",
+  projectId: "Replace with your firebase credentials",
+  storageBucket: "Replace with your firebase credentials",
+  messagingSenderId: "Replace with your firebase credentials",
+  appId: "Replace with your firebase credentials",
+  measurementId: "Replace with your firebase credentials"
 };
 
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
+
