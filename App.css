@@ -1,0 +1,168 @@
+/* ===== Global Variables ===== */
+:root {
+  --primary-red: #c0392b;      /* Main red from your first reference */
+  --secondary-red: #e74c3c;    /* Hover / secondary red */
+  --bg-light: #fff;             /* White background */
+  --text-dark: #333;            /* Main text color */
+  --text-secondary: #555;       /* Secondary text */
+  --text-light: #fff;           /* White text */
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* ===== Forms & Inputs ===== */
+input, select, textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Updated border color */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-red);
+  box-shadow: 0 0 5px rgba(192, 57, 43, 0.5); /* Match primary red */
+}
+
+/* ===== Buttons ===== */
+button {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Primary Red Button */
+button.primary {
+  background: var(--primary-red);
+  color: var(--text-light);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+/* Secondary Action Button */
+button.secondary {
+  background: var(--secondary-red);
+  color: var(--text-light);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+/* Social Buttons (Google/Facebook) */
+button.social {
+  background: #FFF;
+  color: var(--text-secondary);
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* ===== Cards ===== */
+section {
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+section h2 {
+  color: var(--primary-red);
+  margin-bottom: 10px;
+}
+
+/* Donor & Request Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: #FFF;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Blood Group Badges */
+.badge {
+  background: var(--primary-red);
+  color: var(--text-light);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* ===== Top Section Headers ===== */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: var(--primary-red);
+}
+
+h2 {
+  font-size: 22px;
+}
+
+/* ===== Form Section Styles ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input, form select {
+  background: #fff;
+}
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  input, select, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
